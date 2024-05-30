@@ -1,0 +1,154 @@
+/*стили для навигации*/
+.navigation {
+  margin-top: 48px;
+  margin-bottom: 80px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 50px;
+  }
+  .navigation-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo img {
+      @media screen and (max-width: 768px) {
+        height: 43px;
+      }
+    }
+    a {
+      color: #3f3a51;
+      margin: 0 51px;
+    }
+    .menu-btn {
+      display: none;
+      @media screen and (max-width: 768px) {
+        position: relative;
+        display: block;
+        width: 50px;
+        height: 40px;
+        border-radius: 50%;
+        margin-top: 60px;
+        margin-right: 3px;
+        bottom: 18px;
+      }
+    }
+    .menu-btn span,
+    .menu-btn span::before,
+    .menu-btn span::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -10px;
+      margin-top: -1px;
+      height: 2px;
+      width: 20px;
+      background-color: #4047e2;
+    }
+    .menu-btn span::before,
+    .menu-btn span::after {
+      content: "";
+      display: block;
+      transition: 0.1s;
+    }
+     .menu-btn span::before {
+       transform: translateY(-5px);
+     }
+    .menu-btn span::after {
+      transform: translateY(5px);
+    }
+    .btn__active span {
+      height: 0px;
+      top: 100%;
+      margin-right: 16px;
+    }
+    .btn__active span::before {
+      transform: rotate(45deg);
+    }
+    .btn__active span::after {
+      transform: rotate(-45deg);
+    }
+    .menu__block__active {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: end;
+      position: fixed;
+      inset: 0;
+      background-color: rgba(128, 128, 128, 0.288);
+      transition: 0.1s;
+    }
+    .references {
+      display: block;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+    .references__active {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      position: absolute;
+      right: -0%;
+      padding-top: 80px;
+      height: 100%;
+      width: 70%;
+      background-color: #fff;
+      flex-direction: column;
+      a {
+        margin-right: 16px;
+        font-size: 20px;
+        margin-bottom: 22px;
+        @media screen and (max-width: 360px) {
+          font-size: 18px;
+        }
+        @media screen and (max-width: 325px) {
+          font-size: 16px;
+        }
+      }
+    }
+    .menu__block .menu-btn {
+      margin-top: 30px;
+    }
+    .menu__footer {
+      display: none;
+    }
+    .menu__footer__active {
+      position: relative;
+      display: block;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 16px;
+      color: #8f99ac;
+      margin-right: 12px;
+    }
+    .menu__footer__top {
+      text-align: right;
+      font-size: 16px;
+      margin-bottom: 16px;
+      @media screen and (max-width: 480px) {
+        font-size: 14px;
+      }
+      @media screen and (max-width: 375px) {
+        font-size: 12px;
+      }
+      @media screen and (max-width: 325px) {
+        font-size: 10px;
+      }
+    }
+    .menu__footer__below {
+      text-align: right;
+      font-size: 16px;
+      margin-bottom: 16px;
+      @media screen and (max-width: 480px) {
+        font-size: 14px;
+      }
+      @media screen and (max-width: 375px) {
+        font-size: 12px;
+      }
+      @media screen and (max-width: 325px) {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+/*конец стилей для навигации*/

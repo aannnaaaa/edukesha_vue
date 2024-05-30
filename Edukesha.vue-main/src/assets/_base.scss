@@ -1,0 +1,108 @@
+/*сброс стилей*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+/*сброс стилей закончен*/
+
+/*настройка основных стилей*/
+:root {
+  --swiper-pagination-bottom: none;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  @media screen and (max-width: 992px) {
+    font-size: 14px;
+  }
+}
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #322c49;
+  @media screen and (max-width: 1200px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 992px) {
+    font-size: 24px;
+  }
+}
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  @media screen and (max-width: 992px) {
+    font-size: 18px;
+  }
+  // @media screen and (max-width: 576px) {
+  //   font-size: 18px;
+  // }
+}
+p {
+  font-weight: 400;
+  font-size: 18px;
+  @media screen and (max-width: 1200px) {
+    font-size: 16px;
+  }
+  // @media screen and (max-width: 992px) {
+  //   font-size: 14px;
+  // }
+  @media screen and (max-width: 576px) {
+    font-size: 15px;
+  }
+}
+.button {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 30px;
+  border-radius: 10px;
+  height: 50px;
+  border: none;
+  background: transparent;
+  @media screen and (max-width: 992px) {
+    font-size: 11px;
+    height: 40px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 50%;
+    font-size: 12px;
+  }
+  @media screen and (max-width: 450px) {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .tutorial__button-group {
+    flex-wrap: wrap;
+  }
+}
+
+.button-primary {
+  background: #4047e2;
+  color: white;
+}
+.button-primary_outline {
+  border: 1px solid #4047e2;
+  color: #4047e2;
+}
+/*настройка основных стилей закончена*/

@@ -1,0 +1,83 @@
+/*стили для блока с возможностями*/
+.opportunities {
+  margin-bottom: 67px;
+  h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+  .opportunities__card {
+    height: 100%;
+    min-width: 0;
+    padding: 48px 30px 61px 30px;
+    border-radius: 20px;
+    text-align: center;
+    @media screen and (max-width: 1200px) {
+      height: 320px;
+      padding: 50px 30px 50px 30px;
+    }
+    @media screen and (max-width: 992px) {
+      width: 85%;
+      margin: 0 auto 0 auto;
+    }
+    @media screen and (max-width: 768px) {
+      width: 80%;
+      margin: 0 auto 0 auto;
+    }
+    @media screen and (min-width: 576px) {
+      width: 100%;
+      margin: 0 auto 0 auto;
+    }
+    img {
+      margin-bottom: 26px;
+    }
+    h3 {
+      margin-bottom: 18px;
+      width: 100%;
+    }
+  }
+}
+#card-1 {
+  background-color: #dfe1ff;
+  box-shadow: 0 10px 50px 0 rgba(64, 71, 226, 0.2);
+}
+#card-2 {
+  background-color: #ffe1ad;
+  box-shadow: 0 10px 50px 0 rgba(252, 162, 6, 0.2);
+}
+.swiper-container {
+  overflow: hidden;
+  width: 100%;
+}
+.mobile {
+  display: none;
+  @media screen and (max-width: 576px) {
+    display: block;
+  }
+}
+.desktop {
+  display: block;
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+}
+.slider-card {
+  height: 320px;
+  min-width: 0;
+  padding: 48px 30px 61px 30px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 60%;
+  margin: 0 auto 0 auto;
+  @media screen and (max-width: 440px) {
+    max-width: 80%;
+  }
+  img {
+    margin-bottom: 26px;
+  }
+  h3 {
+    margin-bottom: 18px;
+    width: 100%;
+  }
+}
+/*конец стилей для блока с возможностями*/

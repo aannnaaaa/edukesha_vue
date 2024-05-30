@@ -1,0 +1,32 @@
+/*стили для третьего блока(про занятия)*/
+.lessons {
+  margin-bottom: 80px;
+  .lessons__text {
+    padding-left: 15px;
+    h2 {
+      margin-bottom: 30px;
+      @media screen and (max-width: 992px) {
+        margin-bottom: 20px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      margin: 0 30px 30px;
+    }
+    @media screen and (max-width: 500px) {
+      margin: 0 0 30px;
+      padding: 0;
+    }
+  }
+  img {
+    width: 100%;
+    box-shadow: 0 10px 50px 0 rgba(64, 71, 226, 0.2);
+    border-radius: 10px;
+    @media screen and (max-width: 768px) {
+      width: 80%;
+    }
+    @media screen and (max-width: 500px) {
+      width: 100%;
+    }
+  }
+}
+/*конец стилей для третьего блока(про занятия)*/

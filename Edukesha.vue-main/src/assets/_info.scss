@@ -1,0 +1,45 @@
+/*стили для второго блока*/
+.info {
+  margin-bottom: 80px;
+  background-color: #dfe1ff;
+  @media screen and (max-width: 500px) {
+    background-color: white;
+  }
+  .info__text {
+    margin-top: 73px;
+    @media screen and (max-width: 1200px) {
+      margin-top: 60px;
+    }
+    @media screen and (max-width: 992px) {
+      margin-top: 40px;
+    }
+    @media screen and (max-width: 500px) {
+      margin-top: 0;
+    }
+    .info__text__header {
+      margin-bottom: 28px;
+    }
+    .info__text__footer {
+      color: #3f3a51;
+      margin-bottom: 89px;
+      @media screen and (max-width: 1200px) {
+        margin-bottom: 60px;
+      }
+      @media screen and (max-width: 768px) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .teacher {
+    width: 100%;
+    box-shadow: 0 10px 50px 0 rgba(64, 71, 226, 0.2);
+    @media screen and (max-width: 992px) {
+      height: 150px;
+    }
+    @media screen and (max-width: 768px) {
+      height: 100%;
+      margin-bottom: 30px;
+    }
+  }
+}
+/*конец стилей для второго блока*/
